@@ -7,7 +7,6 @@
   Native.
 - Switch to `@digitalbazaar/security-context` (more compact, no fs dependency).
 
-
 ## 9.3.0 - 2021-07-10
 
 ### Added
