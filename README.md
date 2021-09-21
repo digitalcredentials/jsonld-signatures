@@ -1,9 +1,6 @@
-# JSON-LD Signatures _(jsonld-signatures)_
+# JSON-LD Signatures _(@digitalcredentials/jsonld-signatures)_
 
-[![Build status](https://img.shields.io/github/workflow/status/digitalbazaar/jsonld-signatures/Node.js%20CI)](https://github.com/digitalbazaar/jsonld-signatures/actions?query=workflow%3A%22Node.js+CI%22)
-[![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/jsonld-signatures)](https://codecov.io/gh/digitalbazaar/jsonld-signatures)
-[![Dependency Status](https://img.shields.io/david/digitalbazaar/jsonld-signatures.svg)](https://david-dm.org/digitalbazaar/jsonld-signatures)
-[![NPM Version](https://img.shields.io/npm/v/jsonld-signatures.svg)](https://npm.im/jsonld-signatures)
+[![NPM Version](https://img.shields.io/npm/v/@digitalcredentials/jsonld-signatures.svg)](https://npm.im/digitalcredentials/jsonld-signatures)
 
 > An implementation of the Linked Data Signatures specification for JSON-LD, for Node.js and browsers.
 
@@ -19,9 +16,12 @@
 
 ## Version Compatibility
 
+(Forked from [`jsonld-signatures` v9.0.0](https://github.com/digitalbazaar/jsonld-signatures)
+to provide TypeScript compatibility.)
+
 `jsonld-signatures` **v9.0** is compatible with the following signature suites:
 
-* [`ed25519-signature-2020`](https://github.com/digitalbazaar/ed25519-signature-2020)
+* [`ed25519-signature-2020`](https://github.com/digitalcredentials/ed25519-signature-2020)
   `>= 2.1.0`.
 
 and the following related libraries:
@@ -29,7 +29,7 @@ and the following related libraries:
 * `crypto-ld` `>= 5.0.0` (and related key crypto suites such as 
   [`ed25519-verification-key-2020`](https://github.com/digitalbazaar/ed25519-verification-key-2020)
   `>= 2.1.0`).
-* `vc-js` `>= 7.0` (currently, [branch `v7.x`](https://github.com/digitalbazaar/vc-js/pull/83))
+* `@digitalcredentials/vc` `>= 1.0`
 
 ## Background
 
@@ -61,7 +61,7 @@ document.
 One common use case for creating these signatures is for use with 
 [Verifiable Credentials](https://w3c.github.io/vc-data-model) (VCs). If you're 
 working with those, you should use a higher-level library that's specifically
-made for that purpose, such as [`vc-js`](https://github.com/digitalbazaar/vc-js).
+made for that purpose, such as [`@digitalcredentials/vc`](https://github.com/digitalcredentials/vc-js).
 (Incidentally, `vc-js` uses this library, `jsonld-signatures`, under the hood.)
 
 ## Security
@@ -104,7 +104,7 @@ security, or business rules.
 To install locally (for development):
 
 ```
-git clone https://github.com/digitalbazaar/jsonld-signatures.git
+git clone https://github.com/digitalcredentials/jsonld-signatures.git
 cd jsonld-signatures
 npm install
 ```
@@ -115,7 +115,7 @@ npm install
 Instead, it's generally used through an individual _crypto suite_.
 For detailed usage instructions, see the READMEs of the supported suites:
 
-* [`Ed25519Signature2020`](https://github.com/digitalbazaar/ed25519-signature-2020) 
+* [`Ed25519Signature2020`](https://github.com/digitalcredentials/ed25519-signature-2020) 
 * [`Ed25519Signature2018`](https://github.com/digitalbazaar/ed25519-signature-2018)
 
 Most of the usages with individual suites and key types will have elements in
@@ -129,7 +129,7 @@ common. You'll need to:
   them for (see section on Proof Purpose below), using a Controller Document
   (such as a DID Document or similar).
 * Pair those keys with a corresponding cryptographic Signature Suite.
-  For greenfield development, we recommend the [`Ed25519Signature2020`](https://github.com/digitalbazaar/ed25519-signature-2020)
+  For greenfield development, we recommend the [`Ed25519Signature2020`](https://github.com/digitalcredentials/ed25519-signature-2020)
   suite, and for legacy/compatibility work, you can use 
   [`Ed25519Signature2018`](https://github.com/digitalbazaar/ed25519-signature-2018) suite.
   See also the [Choosing a Key Type](https://github.com/digitalbazaar/crypto-ld#choosing-a-key-type)
@@ -153,11 +153,7 @@ PRs accepted.
 If editing the Readme, please conform to the
 [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
 
-## Commercial Support
-
-Commercial support for this library is available upon request from
-Digital Bazaar: support@digitalbazaar.com
-
 ## License
 
-[New BSD License (3-clause)](LICENSE) © Digital Bazaar
+* MIT License - DCC - TypeScript compatibility.
+* New BSD License (3-clause) © 2020-2021 Digital Bazaar - Initial implementation.
