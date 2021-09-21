@@ -1,6 +1,6 @@
 # jsonld-signatures ChangeLog
 
-## 9.3.1 -
+## 9.3.1 - 2021-09-20
 
 ### Changed
 - Update `jsonld` (and `rdf-canonize`) dependency, to enable use with React
