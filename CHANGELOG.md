@@ -1,5 +1,9 @@
 # jsonld-signatures ChangeLog
 
+## 9.3.2 - 2023-06-16
+### Changed
+- Update jsonld dep to 6.0.0, clear caches between operations.
+
 ## 9.3.1 - 2021-09-20
 
 ### Changed
