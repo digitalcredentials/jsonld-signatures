@@ -1,5 +1,11 @@
 # jsonld-signatures ChangeLog
 
+## 10.0.0 -
+
+### Changed
+- Switch back to DB's `jsonld` and `http-client`.
+- Switch to Sphereon's fork `@sphereon/isomorphic-webclient`
+
 ## 9.4.0 - 2024-01-23
 ### Changed
 - **BREAKING**: Removed deprecated `expansionMap` param. Making this a minor
