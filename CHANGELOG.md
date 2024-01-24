@@ -1,6 +1,6 @@
 # jsonld-signatures ChangeLog
 
-## 9.4.0 -
+## 9.4.0 - 2024-01-23
 ### Changed
 - **BREAKING**: Removed deprecated `expansionMap` param. Making this a minor
   semver because nobody was using it.
