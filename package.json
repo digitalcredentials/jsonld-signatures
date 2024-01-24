@@ -39,7 +39,7 @@
     "webpack": "^5.24.3"
   },
   "engines": {
-    "node": ">=12"
+    "node": ">=18"
   },
   "keywords": [
     "JSON",
