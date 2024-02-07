@@ -1,6 +1,6 @@
 # jsonld-signatures ChangeLog
 
-## 10.0.0 -
+## 10.0.0 - 2024-02-07
 
 ### Changed
 - Switch back to DB's `jsonld` and `http-client`.
