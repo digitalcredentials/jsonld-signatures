@@ -14,7 +14,7 @@
     "lib/**/*.js"
   ],
   "dependencies": {
-    "jsonld": "digitalcredentials/jsonld.js#react-native",
+    "jsonld": "digitalcredentials/jsonld.js#v10.x",
     "@digitalbazaar/security-context": "^1.0.0",
     "@sphereon/isomorphic-webcrypto": "^2.4.0-unstable.4",
     "fast-text-encoding": "^1.0.3",
