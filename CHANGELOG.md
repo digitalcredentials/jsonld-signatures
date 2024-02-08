@@ -1,5 +1,10 @@
 # jsonld-signatures ChangeLog
 
+## 10.0.1 - 2024-02-07
+
+### Changed
+- Use jsonld@v10.x (contains 'Clear jsonld caches' change).
+
 ## 10.0.0 - 2024-02-07
 
 ### Changed
