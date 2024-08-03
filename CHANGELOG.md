@@ -1,6 +1,6 @@
 # jsonld-signatures ChangeLog
 
-## 10.1.0 -
+## 10.1.0 - 2024-08-03
 
 ### Added
 @kezike's updates as part of supporting VC 2.0 spec.
