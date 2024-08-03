@@ -1,5 +1,16 @@
 # jsonld-signatures ChangeLog
 
+## 10.1.0 -
+
+### Added
+@kezike's updates as part of supporting VC 2.0 spec.
+
+- Add ProofSet `derive()`, pass `proofSet` param to functions.
+
+### Changed
+- Update DigitalBazaar's `jsonld` dep to `#v10.1.x` branch (until upstream react-native PR gets merged)
+- Potentially **breaking**: Update to `@sphereon/isomorphic-webcrypto@2.5.0-unstable.0`
+
 ## 10.0.1 - 2024-02-07
 
 ### Changed
@@ -9,7 +20,7 @@
 
 ### Changed
 - Switch back to DB's `jsonld` and `http-client`.
-- Switch to Sphereon's fork `@sphereon/isomorphic-webclient`
+- Switch to Sphereon's fork `@sphereon/isomorphic-webcrypto`
 
 ## 9.4.0 - 2024-01-23
 ### Changed

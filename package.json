@@ -14,9 +14,9 @@
     "lib/**/*.js"
   ],
   "dependencies": {
-    "jsonld": "digitalcredentials/jsonld.js#v10.x",
+    "jsonld": "digitalcredentials/jsonld.js#v10.1.x",
     "@digitalbazaar/security-context": "^1.0.0",
-    "@sphereon/isomorphic-webcrypto": "^2.4.0-unstable.4",
+    "@sphereon/isomorphic-webcrypto": "^2.5.0-unstable.0",
     "fast-text-encoding": "^1.0.3",
     "serialize-error": "^8.0.1"
   },
