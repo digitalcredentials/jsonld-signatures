@@ -1,4 +1,9 @@
-# jsonld-signatures ChangeLog
+# @digitalcredentials/jsonld-signatures ChangeLog
+
+## 11.0.0 - 
+
+### Changed
+- **BREAKING**: Now uses DCC forks of `jsonld` and `http-client`.
 
 ## 10.1.0 - 2024-08-03
 
