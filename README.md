@@ -14,22 +14,8 @@
 - [Commercial Support](#commercial-support)
 - [License](#license)
 
-## Version Compatibility
-
 (Forked from [`jsonld-signatures` v9.0.0](https://github.com/digitalbazaar/jsonld-signatures)
-to provide TypeScript compatibility.)
-
-`jsonld-signatures` **v9.0** is compatible with the following signature suites:
-
-* [`ed25519-signature-2020`](https://github.com/digitalcredentials/ed25519-signature-2020)
-  `>= 2.1.0`.
-
-and the following related libraries:
-
-* `crypto-ld` `>= 5.0.0` (and related key crypto suites such as 
-  [`ed25519-verification-key-2020`](https://github.com/digitalbazaar/ed25519-verification-key-2020)
-  `>= 2.1.0`).
-* `@digitalcredentials/vc` `>= 1.0`
+to provide TypeScript, Jest, and React Native compatibility.)
 
 ## Background
 
@@ -61,7 +47,7 @@ document.
 One common use case for creating these signatures is for use with 
 [Verifiable Credentials](https://w3c.github.io/vc-data-model) (VCs). If you're 
 working with those, you should use a higher-level library that's specifically
-made for that purpose, such as [`@digitalcredentials/vc`](https://github.com/digitalcredentials/vc-js).
+made for that purpose, such as [`@digitalcredentials/vc`](https://github.com/digitalcredentials/vc).
 (Incidentally, `vc-js` uses this library, `jsonld-signatures`, under the hood.)
 
 ## Security
@@ -111,7 +97,22 @@ npm install
 
 ## Usage
 
-`jsonld-signatures` (version `8.x` and above) is not meant for standalone use.
+### React Native Usage
+
+This library depends on `expo-crypto` when used inside React Native projects.
+That means you must add `expo-crypto` to your project's dependencies.
+
+Sample `package.json`:
+
+```
+  "dependencies": {
+    "expo-crypto": "~12.8.0"
+  }
+```
+
+### Node.js and Browser Usage
+
+`jsonld-signatures` (version `12.x` and above) is not meant for standalone use.
 Instead, it's generally used through an individual _crypto suite_.
 For detailed usage instructions, see the READMEs of the supported suites:
 
@@ -136,13 +137,6 @@ common. You'll need to:
   section of `crypto-ld` documentation.
 * Set up your `documentLoader` to fetch contexts and documents securely.
 * Lastly, perform the `jsigs.sign()` or `jsigs.verify()` operations.
-
-### Node.js Native Canonize Bindings
-
-Specialized use cases may wish to use the native canonize bindings. This mode
-can be enabled by setting the `useNativeCanonize` option to `true`. See the
-[jsonld.js notes](https://github.com/digitalbazaar/jsonld.js#nodejs-native-canonize-bindings)
-on this feature and note you should benchmark performance before using it.
 
 ## Contribute
 
