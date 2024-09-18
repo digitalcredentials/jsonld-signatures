@@ -1,6 +1,6 @@
 # @digitalcredentials/jsonld-signatures ChangeLog
 
-## 12.0.0 -
+## 12.0.0 - 2024-09-17
 
 ### Changed
 - **BREAKING**: Now uses `expo-crypto` for React Native sha256 digest hashing, instead of 
