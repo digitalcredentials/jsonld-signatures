@@ -16,7 +16,6 @@
   "dependencies": {
     "@digitalcredentials/jsonld": "^9.0.0",
     "@digitalbazaar/security-context": "^1.0.0",
-    "@sphereon/isomorphic-webcrypto": "^2.5.0-unstable.0",
     "fast-text-encoding": "^1.0.3",
     "serialize-error": "^8.0.1"
   },
@@ -67,8 +66,9 @@
   "browser": {
     "crypto": false,
     "./lib/sha256digest.js": "./lib/sha256digest-browser.js",
+    "./lib/sha256digest-reactnative.js": false,
     "fast-text-encoding": false,
-    "@sphereon/isomorphic-webcrypto": false
+    "expo-crypto": false
   },
   "react-native": {
     "crypto": false,
