@@ -1,6 +1,6 @@
 {
   "name": "@digitalcredentials/jsonld-signatures",
-  "version": "12.0.0",
+  "version": "12.0.1",
   "description": "An implementation of the Linked Data Signatures specifications for JSON-LD in JavaScript.",
   "homepage": "https://github.com/digitalcredentials/jsonld-signatures",
   "repository": {
@@ -67,8 +67,7 @@
     "crypto": false,
     "./lib/sha256digest.js": "./lib/sha256digest-browser.js",
     "./lib/sha256digest-reactnative.js": false,
-    "fast-text-encoding": false,
-    "expo-crypto": false
+    "fast-text-encoding": false
   },
   "react-native": {
     "crypto": false,

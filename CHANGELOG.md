@@ -1,5 +1,10 @@
 # @digitalcredentials/jsonld-signatures ChangeLog
 
+## 12.0.1 - 2024-09-17
+
+### Fixed
+- Fix `expo-crypto` browser export.
+
 ## 12.0.0 - 2024-09-17
 
 ### Changed
